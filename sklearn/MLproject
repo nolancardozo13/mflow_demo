@@ -1,0 +1,11 @@
+name: sklearn_project
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      alpha: {type: float, default: 1}
+      l1_ratio: {type: float, default: 0.5}
+    command: "python3 sklearn_project.py --alpha {alpha} --l1_ratio {l1_ratio}"
+   
+   
+
